@@ -1,7 +1,7 @@
-CREATE TABLE IF NOT EXISTS dim_customer
+CREATE TABLE IF NOT EXISTS dim_staff
 (
-    customer_key    integer PRIMARY KEY,
-    customer_id     smallint NOT NULL,
+    staff_key       integer PRIMARY KEY,
+    staff_id        smallint NOT NULL,
     first_name      varchar(45) NOT NULL,
     last_name       varchar(45) NOT NULL,
     email           varchar(50),
@@ -12,6 +12,5 @@ CREATE TABLE IF NOT EXISTS dim_customer
     country         varchar(50) NOT NULL,
     postal_code     varchar(10),
     phone           varchar(20) NOT NULL,
-    active          boolean NOT NULL,
-    create_date     timestamp NOT NULL
+    active          boolean NOT NULL
 );
